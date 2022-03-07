@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro de Cliente</title>
+</head>
+<body>
+	<h1>Sistema de cadastro de clientes</h3>
+	<h3>Inclusão de cliente:</h3>
+	<form action="gravarCliente.php" method="get">
+	Nome: <input type="text" name="nomeCliente" maxlength="50" size="50"
+		placeholder="Informe o nome"> <br>
+	<br>
+
+	Data:  <input type= "date" name="nascimento" maxlength="10" size="10"><br>
+	<br>
+	
+	Sexo:<input type="radio" name="sexo" value="M">Masculino
+	<input type="radio" name="sexo" value="F" checked>Feminino <br>
+	<br>
+	
+	Estado Civil
+	<select name="estadoCivil">
+	<option value="">Escolha</option>
+	<option value="S">SOLTEIRO</option>
+	<option value="C">CASADO</option>
+	</select> <br>
+	<br>
+	<h3>Contato:</h3>
+	<br>
+	<fieldset>
+	<legend>Dados de Contato</legend>
+	E-mail:<input type="text" name="email" maxlength="50" size="50"
+        placeholder="Informe seu e-mail"> <br>	
+	<br>
+	<div>
+    <input type = "checkbox" id = "receberEmail" name = "receberEmail" value = 1>
+    <label for = "deseja receber e-mails?"> deseja receber e-mails? </ label>
+  </div>
+  <br>
+	DDD: (<input type="text" name="ddd1" maxlength="2" size="1">)
+	TELEFONE:<input type="text" name="telefone1" maxlength="9" size="9">
+	TIPO: <select name="tipo1">
+	<option value="">Escolha</option>
+	<option value="CE">Celular</option>
+	<option value="RS">Residencial</option>
+	<option value="CO">Comercial</option>
+	<option value="RE">Recado</option>	
+	</select>
+	<hr>
+	DDD: (<input type="text" name="ddd2" maxlength="2" size="1">)
+	TELEFONE:<input type="text" name="telefone2" maxlength="9" size="9">
+	TIPO: <select name="tipo2">
+	<option value="">Escolha</option>
+	<option value="CEL">Celular</option>
+	<option value="RES">Residencial</option>
+	<option value="COM">Comercial</option>
+	<option value="REC">Recado</option>	
+	</select>
+	<hr>
+	DDD: (<input type="text" name="ddd3" maxlength="2" size="1">)
+	TELEFONE:<input type="text" name="telefone3" maxlength="9" size="9">
+	TIPO: <select name="tipo3">
+	<option value="">Escolha</option>
+	<option value="CE">Celular</option>
+	<option value="RS">Residencial</option>
+	<option value="CO">Comercial</option>
+	<option value="RE">Recado</option>	
+	</select>
+	<hr>
+	</fieldset>
+  <h3>Observação:</h3>
+	<textarea id="story" name="observacao"
+          rows="5" cols="33" placeholder= Deixar uma observação.>
+  </textarea>
+	<hr>	
+	
+	<input type="submit" value="Cadastrar">
+	</form>
+</body>	
+
+</html>
